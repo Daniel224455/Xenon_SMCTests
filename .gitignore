@@ -8,3 +8,4 @@ SMCTests/Release/
 SMCTests/Release_LTCG/
 *.vcxproj.user
 *.XGD
+ipch/

@@ -65,14 +65,20 @@ void __cdecl main()
 
     printf("[SMC] Entry\n");
 
-    ShowNotification("SMC Test");
+    int choice = DisplayMessageBoxWithButtons("TEST", 
+		                                      "Continue?", 
+											  "Yes", 
+											  "No");
+    if (choice == 1)
+        return;
 
+	ShowNotification("SMC Test");
 	printf("[SMC] SMC Version: %s\n", smc.GetSMCVersion());
 	printf("[SMC] Intiating SMC calls\n");
 
 	TestSMC();
 
-	ShowNotification("Finished");
+	DisplayMessageBox("Finished", "Press OK to return to XShell/dash");
 
     return;
 }
