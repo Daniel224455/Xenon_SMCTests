@@ -1,0 +1,10 @@
+*.opensdf
+*.sdf
+*.suo
+SMCTests/Debug/
+SMCTests/Profile/
+SMCTests/Profile_FastCap/
+SMCTests/Release/
+SMCTests/Release_LTCG/
+*.vcxproj.user
+*.XGD
